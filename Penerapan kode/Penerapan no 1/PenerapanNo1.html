@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Ganjil-Genap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Ganjil-Genap</h1>
+        <p>by <a href="https://github.com/Nijika21" target="_blank">Gani Adrian Tio Gunardi</a></p>
+        
+        <div class="input-section">
+            <h2>Masukkan Data Kendaraan</h2>
+            
+            <div class="date-input">
+                <label for="customDate">Tanggal (1-30)</label>
+                <input type="number" id="customDate" min="1" max="30">
+            </div>
+            
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="kodeWilayah">Kode Wilayah</label>
+                    <select id="kodeWilayah">
+                        <option value="B">B (Jakarta)</option>
+                        <option value="D">D (Bandung)</option>
+                        <option value="AD">AD (Surakarta)</option>
+                        <option value="P">P (Jember)</option>
+                        <option value="L">L (Surabaya)</option>
+                    </select>
+                </div>
+                
+                <div class="input-field">
+                    <label for="nomorPolisi">Nomor Polisi (Angka)</label>
+                    <input type="text" id="nomorPolisi" placeholder="4 digit angka" maxlength="4" pattern="\d{4}">
+                </div>
+                
+                <div class="input-field">
+                    <label for="kodeAkhir">Kode Akhir</label>
+                    <input type="text" id="kodeAkhir" placeholder="1-3 huruf" maxlength="3" pattern="[A-Za-z]{1,3}">
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button class="check-btn" onclick="checkPlat()">Periksa</button>
+                <button class="reset-btn" onclick="resetData()">Reset Data</button>
+            </div>
+        </div>
+        
+        <div class="result-section">
+            <h2>Hasil</h2>
+            <div id="no-data" class="no-data">Belum ada data kendaraan.</div>
+            
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Plat Nomor</th>
+                        <th>Jenis Plat</th>
+                        <th>Status</th>
+                        <th>Tanggal</th>
+                        <th>Hapus</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
