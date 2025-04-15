@@ -81,7 +81,7 @@ function tambahKeTabel(platNomor, kategoriPlat, statusLaluLintas, tanggal) {
         <td>${counter++}</td>
         <td>${platNomor}</td>
         <td>${kategoriPlat}</td>
-        <td class="status-${statusLaluLintas === 'DIJINKAN' ? 'dijinkan' : 'dilarang'}">${statusLaluLintas}</td>
+        <td class="status-${statusLaluLintas === 'DIIZINKAN' ? 'diizinkan' : 'dilarang'}">${statusLaluLintas}</td>
         <td>${tanggal}</td>
         <td><button class="hapus-btn" onclick="hapusBaris(this)">Hapus</button></td>
     `;
