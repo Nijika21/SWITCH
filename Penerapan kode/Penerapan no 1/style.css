@@ -64,6 +64,10 @@ input, select {
     font-size: 16px;
 }
 
+input.customdate{
+    width: 100%;
+}
+
 .button-group {
     display: flex;
     gap: 10px;
