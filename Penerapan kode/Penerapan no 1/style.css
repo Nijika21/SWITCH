@@ -57,15 +57,11 @@ label {
 }
 
 input, select {
-    width: 95%;
+    width: 100%;
     padding: 10px 0;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
     font-size: 16px;
-}
-
-input.customdate{
-    width: 100%;
 }
 
 .button-group {
