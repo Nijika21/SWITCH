@@ -70,14 +70,12 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Responsive Styles */
-@media (max-width: 770px) {
-    /* Hide table header on small screens */
+/* Responsive gabut jir */
+@media (max-width: 550px) {
     #hasilTable thead {
         display: none;
     }
     
-    /* Make table cells stack vertically */
     #hasilTable tbody tr {
         display: block;
         margin-bottom: 15px;
@@ -93,7 +91,6 @@ button:hover {
         border-bottom: 1px solid #eee;
     }
     
-    /* Add labels for each cell */
     #hasilTable tbody td::before {
         content: attr(data-label);
         font-weight: bold;
@@ -102,7 +99,6 @@ button:hover {
         padding-right: 10px;
     }
     
-    /* Input section adjustments */
     .input-section {
         padding: 15px;
     }
@@ -110,10 +106,10 @@ button:hover {
     .input-section div {
         margin-bottom: 10px;
     }
-    
+
     .input-section label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
     
     .input-section input {
@@ -121,22 +117,18 @@ button:hover {
         box-sizing: border-box;
     }
     
-    /* Button adjustments */
     .input-section button {
         width: 100%;
         margin: 5px 0;
         padding: 10px;
     }
-}
 
-/* Additional small screen adjustments */
-@media (max-width: 770px) {
     table thead {
         display: none;
     }
     
     table tr {
-        display: block;
+        display: flex;
         margin-bottom: 15px;
         border: 1px solid #ddd;
         border-radius: 5px;
@@ -161,7 +153,7 @@ button:hover {
     
     table td button {
         width: 90%;
-        max-width: 200px;
+        max-width: 300px;
         padding: 10px;
         text-align: center;
         margin-top: 5px;
