@@ -74,7 +74,7 @@ function updateTabel() {
     if (daftarSiswa.length > 0) {
         gradeInfo.innerHTML = `<p>Total siswa: ${daftarSiswa.length}</p>`;
     } else {
-        gradeInfo.innerHTML = '<p>Belum ada data siswa.</p>';
+        gradeInfo.innerHTML = '<p>Belum ada data siswa</p>';
     }
 }
 
