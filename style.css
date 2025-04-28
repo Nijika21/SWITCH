@@ -50,3 +50,47 @@ button {
 button:hover {
     opacity: 0.9;
 }
+
+/* Responsive (gabut) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .tugas {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    p, a {
+        font-size: 0.9rem;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px 15px;
+    }
+}

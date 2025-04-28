@@ -60,11 +60,11 @@ function updateTabel() {
         const row = document.createElement('tr');
         
         row.innerHTML = `
-            <td>${index + 1}</td>
-            <td>${siswa.nama}</td>
-            <td>${siswa.nilai}</td>
-            <td>${siswa.grade}</td>
-            <td><button onclick="hapusSiswa(${index})">Hapus</button></td>
+            <td data-label="No">${index + 1}</td>
+            <td data-label="Nama">${siswa.nama}</td>
+            <td data-label="Nilai">${siswa.nilai}</td>
+            <td data-label="Grade">${siswa.grade}</td>
+            <button onclick="hapusSiswa(${index})">Hapus</button>
         `;
         
         tbody.appendChild(row);
@@ -92,5 +92,5 @@ function resetData() {
     }
 }
 
-// biar tabel gk ngebug
+// optimize
 document.addEventListener('DOMContentLoaded', updateTabel);

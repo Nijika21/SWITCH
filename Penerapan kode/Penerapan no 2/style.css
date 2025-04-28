@@ -69,3 +69,117 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* Responsive Styles */
+@media (max-width: 770px) {
+    /* Hide table header on small screens */
+    #hasilTable thead {
+        display: none;
+    }
+    
+    /* Make table cells stack vertically */
+    #hasilTable tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    #hasilTable tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* Add labels for each cell */
+    #hasilTable tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: auto;
+        text-align: left;
+        padding-right: 10px;
+    }
+    
+    /* Input section adjustments */
+    .input-section {
+        padding: 15px;
+    }
+    
+    .input-section div {
+        margin-bottom: 10px;
+    }
+    
+    .input-section label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .input-section input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Button adjustments */
+    .input-section button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+    }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 770px) {
+    table thead {
+        display: none;
+    }
+    
+    table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+    
+    table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 10px 5px;
+    }
+    
+    table td:last-child {
+        justify-content: center;
+        border-bottom: none;
+    }
+    
+    table td button {
+        width: 90%;
+        max-width: 200px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 5px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    table td button:hover {
+        background-color: #45a049;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: auto;
+    }
+
+}
