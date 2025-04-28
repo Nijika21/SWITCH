@@ -70,14 +70,13 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Responsive Styles */
+/* Responsive gabut jir */
 @media (max-width: 770px) {
     /* Hide table header on small screens */
     #hasilTable thead {
         display: none;
     }
     
-    /* Make table cells stack vertically */
     #hasilTable tbody tr {
         display: block;
         margin-bottom: 15px;
@@ -93,7 +92,6 @@ button:hover {
         border-bottom: 1px solid #eee;
     }
     
-    /* Add labels for each cell */
     #hasilTable tbody td::before {
         content: attr(data-label);
         font-weight: bold;
@@ -102,7 +100,6 @@ button:hover {
         padding-right: 10px;
     }
     
-    /* Input section adjustments */
     .input-section {
         padding: 15px;
     }
@@ -121,7 +118,6 @@ button:hover {
         box-sizing: border-box;
     }
     
-    /* Button adjustments */
     .input-section button {
         width: 100%;
         margin: 5px 0;
@@ -129,7 +125,6 @@ button:hover {
     }
 }
 
-/* Additional small screen adjustments */
 @media (max-width: 770px) {
     table thead {
         display: none;
