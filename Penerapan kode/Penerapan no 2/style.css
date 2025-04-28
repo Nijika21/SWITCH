@@ -122,7 +122,9 @@ button:hover {
         margin: 5px 0;
         padding: 10px;
     }
+}
 
+@media (max-width: 770px) {
     table thead {
         display: none;
     }
